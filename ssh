@@ -1,0 +1,9 @@
+## Генерируем ключ:
+  ssh-keygen
+
+На машине, к которой хотим подключаться без пароля, редактируем файл "/etc/ssh/sshd_config". PasswordAuthentication yes. 
+Перезапускаем службу sudo service sshd reload.
+
+  ssh-copy-id user@ip-server
+
+## Пробуем подключаться.
